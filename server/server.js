@@ -13,7 +13,7 @@ import * as path from 'path'
 import {config as loggingConfig} from './config/logging'
 import {config as mailConfig} from './config/mail'
 
-dotenv.config()
+dotenv.config({path: './.env'})
 
 const app = express()
 const upload = multer({storage: './storage/images'})
