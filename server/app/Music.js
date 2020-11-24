@@ -17,6 +17,14 @@ const MusicList = connection.define('musicList', {
         defaultValue: 'Default Music'
     },
 
+    author: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        min: 3,
+        max: 255,
+        defaultValue: 'Default Music'
+    },
+
     src: {
         type: Sequelize.STRING,
         min: 5,
@@ -24,8 +32,7 @@ const MusicList = connection.define('musicList', {
         allowNull: false
     },
 
-
-    extenstion: {
+    extension: {
         type: Sequelize.STRING,
         allowNull: false,
         min: 3,

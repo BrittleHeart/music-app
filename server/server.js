@@ -70,4 +70,4 @@ if(process.env.PROJECT_MODE === 'production')
 else if(process.env.PROJECT_MODE === 'development')
     app.listen(PORT, () => console.log(`Server has been exposed here -> http://localhost:${PORT} - ${process.memoryUsage().heapUsed / Math.pow(1024, 2)} MB memory usage`))
 
-export {app, upload, logger, mailer}
+export {app, upload, logger, mailer, fs}
